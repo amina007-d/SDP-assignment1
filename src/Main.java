@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-       PhoneBuilder phoneBuilder = new PhoneBuilder();
+       IBuilder phoneBuilder = new PhoneBuilder();
 
         Phone FlagshipSamsung = phoneBuilder
                 .setBrand("Samsung")
@@ -10,14 +10,5 @@ public class Main {
                 .setHasESIM(true)
                 .getPhone();
         System.out.println(FlagshipSamsung);
-
-        Phone BudgetXiaomi = phoneBuilder
-                .setBrand("Xiaomi")
-                .setModel("Redmi Note 9")
-                .setCamera("48MP")
-                .setHas5G(false)
-                .setHasESIM(false)
-                .getPhone();
-        System.out.println(BudgetXiaomi);
     }
 }

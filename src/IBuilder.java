@@ -3,6 +3,6 @@ public interface IBuilder {
     IBuilder setModel(String model);
     IBuilder setCamera(String model);
     IBuilder setHas5G(boolean has5G);
-    IBuilder setHasESIM(boolean has4G);
+    IBuilder setHasESIM(boolean hasESIM);
     Phone getPhone();
 }

@@ -6,37 +6,37 @@ public class PhoneBuilder implements IBuilder {
     private boolean hasESIM;
 
     @Override
-    public PhoneBuilder setBrand(String brand) {
+    public IBuilder setBrand(String brand) {
         this.brand = brand;
         return this;
     }
 
     @Override
-    public PhoneBuilder setModel(String model) {
+    public IBuilder setModel(String model) {
         this.model = model;
         return this;
     }
 
     @Override
-    public PhoneBuilder setCamera(String camera) {
+    public IBuilder setCamera(String camera) {
         this.camera = camera;
         return this;
     }
 
     @Override
-    public PhoneBuilder setHas5G(boolean has5G) {
+    public IBuilder setHas5G(boolean has5G) {
         this.has5G = has5G;
         return this;
     }
 
     @Override
-    public PhoneBuilder setHasESIM(boolean hasESIM) {
+    public IBuilder setHasESIM(boolean hasESIM) {
         this.hasESIM = hasESIM;
         return this;
     }
 
     @Override
     public Phone getPhone() {
-        return new Phone(brand,model,camera, has5G, hasESIM);
+        return new Phone(brand, model, camera, has5G, hasESIM);
     }
 }
